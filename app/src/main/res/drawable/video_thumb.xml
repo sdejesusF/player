@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <size
+                android:width="@dimen/media_controller_thumb_size"
+                android:height="@dimen/media_controller_thumb_size" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+</layer-list>

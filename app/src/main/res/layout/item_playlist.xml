@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_playlist_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_playlist_size"
+    android:layout_margin="@dimen/default_extra_small_margin"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item_playlist_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_small_margin"
+            android:layout_weight="3"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/item_playlist_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_play_white" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/item_playlist_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_delete" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

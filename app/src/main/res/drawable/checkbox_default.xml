@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@android:color/transparent" />
+
+    <stroke
+        android:width="@dimen/default_checkbox_border_size"
+        android:color="@color/shadowColor" />
+
+    <corners android:radius="@dimen/default_checkbox_corners" />
+
+    <size
+        android:width="@dimen/default_checkbox_size"
+        android:height="@dimen/default_checkbox_size" />
+
+</shape>

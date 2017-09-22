@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+
+    <string name="bottom_navigation_menu_home">Home</string>
+    <string name="bottom_navigation_menu_playlist">Playlist</string>
+    <string name="bottom_navigation_menu_about">About</string>
+
+    <string name="screen_permission_permissions_info">VideoPlayer needs your permissions</string>
+    <string name="screen_permission_permissions_access_external_storage">Enable read your external storage</string>
+
+    <string name="screen_playlist_form_name">Name</string>
+    <string name="screen_playlist_form_videos">Videos</string>
+
+    <string name="screen_playlist_selector_title">Add To Playlist</string>
+    <string name="error_no_videos">No videos available :(</string>
+    <string name="error_required">Required</string>
+    <string name="error_no_playlist">No playlist available :(</string>
+    <string name="error_no_videos_playlist">Playlist with no videos</string>
+    <string name="error_unknown">Something went wrong</string>
+
+    <string name="add_playlist">Add Playlist</string>
+    <string name="new_">New</string>
+    <string name="select">Select</string>
+    <string name="refresh">Refresh</string>
+    <string name="save">Save</string>
+    <string name="notification_long_press_remove">Long press to remove</string>
+    <string name="notification_saved">Successfully Saved</string>
+    <string name="notification_deleted">Successfully Deleted</string>
+    <string name="videos">Videos</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom_gray"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/default_small_margin"
+    android:paddingTop="@dimen/default_small_margin">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/item_permission_icon_wrapper"
+        android:layout_width="@dimen/item_permission_size"
+        android:layout_height="@dimen/item_permission_size"
+        android:layout_marginStart="@dimen/default_margin"
+        android:innerRadius="0dp"
+        android:shape="oval"
+        android:thicknessRatio="1.9"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="@dimen/item_permission_border_radius"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/item_permission_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_storage"></android.support.v7.widget.AppCompatImageView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_permission_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/default_small_margin"
+        android:text="@string/screen_permission_permissions_access_external_storage"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/default_text_size_medium" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/screen_permission_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/screen_permission_percentage_left" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/screen_permission_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/screen_permission_percentage_right" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/screen_permission_guideline_top_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/screen_permission_percentage_top_logo" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/screen_permission_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_big"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/screen_permission_guideline_top_logo"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/screen_permission_permissions_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_permission_text_margin_top"
+        android:gravity="center"
+        android:text="@string/screen_permission_permissions_info"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/default_text_size_big"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/screen_permission_guideline_left"
+        app:layout_constraintRight_toRightOf="@+id/screen_permission_guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/screen_permission_logo" />
+
+    <include
+        android:id="@+id/screen_permission_permission_read"
+        layout="@layout/item_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_big"
+        app:layout_constraintTop_toBottomOf="@+id/screen_permission_permissions_info" />
+
+</android.support.constraint.ConstraintLayout>
